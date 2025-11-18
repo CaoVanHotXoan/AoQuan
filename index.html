@@ -1,138 +1,139 @@
 <!DOCTYPE html>
 <html lang="vi">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Danh sách sản phẩm</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section id="product-grid" class="products">
-      <div class="container">
-        <h2>Danh sách sản phẩm</h2>
-        <div class="product-grid">
-          <article class="product-card">
-            <img
-              src="./img/sanpham1.jpg"
-              alt="Áo Blazer Nam"
-              style="height: auto; width: auto"
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="left-area">
+          <a href="#" class="logo">
+            <span class="logo-mark">Shop</span>
+            <span class="logo-text">Clothes</span>
+          </a>
+          <nav class="main-nav">
+            <a href="#">Trang Chủ</a>
+            <a href="#">Giới Thiệu</a>
+          </nav>
+          <nav class="main-nav">
+            <a href="#">Khuyến Mãi</a>
+            <a href="#">Giỏ Hàng</a>
+          </nav>
+          <nav class="main-nav">
+            <a href="#">Khảo sát trang phục</a>
+          </nav>
+        </div>
+        <div class="search-area">
+          <form class="search-form" action="#" role="search">
+            <input
+              type="search"
+              class="search-input"
+              placeholder="Áo thun nam"
+              aria-label="Tìm kiếm"
             />
-            <div class="info">
-              <div class="name">Áo Blazer Nam</div>
-              <div class="price">1.785.000₫</div>
-              <div class="desc">Áo blazer nam chất liệu cotton mềm mại.</div>
-            </div>
-            <div class="actions">
-              <button class="btn">Thêm vào giỏ hàng</button>
-            </div>
-          </article>
-          <article class="product-card">
-            <img
-              src="./img/aosomi.jpg"
-              alt="Áo Blazer Nam"
-              style="height: auto; width: auto"
-            />
-            <div class="info">
-              <div class="name">Áo sơ mi Nam</div>
-              <div class="price">100.000₫</div>
-              <div class="desc">Áo sơ mi nam chất liệu cotton mềm mại.</div>
-            </div>
-            <div class="actions">
-              <button class="btn">Thêm vào giỏ hàng</button>
-            </div>
-          </article>
-          <article class="product-card">
-            <img
-              src="./img/aothun.jpg"
-              alt="Áo Thun Nam"
-              style="height: auto; width: auto"
-            />
-            <div class="info">
-              <div class="name">Áo Thun Nam</div>
-              <div class="price">100.000₫</div>
-              <div class="desc">Áo thun nam chất liệu cotton mềm mại.</div>
-            </div>
-            <div class="actions">
-              <button class="btn">Thêm vào giỏ hàng</button>
-            </div>
-          </article>
-          <article class="product-card">
-            <img
-              src="./img/aokhoac.jpg"
-              alt="Áo Khoác Nam"
-              style="height: auto; width: auto"
-            />
-            <div class="info">
-              <div class="name">Áo Khoác Nam</div>
-              <div class="price">300.000₫</div>
-              <div class="desc">Áo khoác nam chất liệu cotton mềm mại.</div>
-            </div>
-            <div class="actions">
-              <button class="btn">Thêm vào giỏ hàng</button>
-            </div>
-          </article>
-          <article class="product-card">
-            <img
-              src="./img/quanshort.jpg"
-              alt="Quần Short Nam"
-              style="height: auto; width: auto"
-            />
-            <div class="info">
-              <div class="name">Quần Short Nam</div>
-              <div class="price">200.000₫</div>
-              <div class="desc">Quần short nam chất liệu cotton mềm mại.</div>
-            </div>
-            <div class="actions">
-              <button class="btn">Thêm vào giỏ hàng</button>
-            </div>
-          </article>
-          <article class="product-card">
-            <img
-              src="./img/quantay.jpg"
-              alt="Quần Tây Nam"
-              style="height: auto; width: auto"
-            />
-            <div class="info">
-              <div class="name">Quần Tây Nam</div>
-              <div class="price">300.000₫</div>
-              <div class="desc">Quần tây nam chất liệu cotton mềm mại.</div>
-            </div>
-            <div class="actions">
-              <button class="btn">Thêm vào giỏ hàng</button>
-            </div>
-          </article>
-          <article class="product-card">
-            <img
-              src="./img/quanjean.jpg"
-              alt="Quần Jean Nam"
-              style="height: auto; width: auto"
-            />
-            <div class="info">
-              <div class="name">Quần Jean Nam</div>
-              <div class="price">200.000₫</div>
-              <div class="desc">Quần jean nam chất liệu cotton mềm mại.</div>
-            </div>
-            <div class="actions">
-              <button class="btn">Thêm vào giỏ hàng</button>
-            </div>
-          </article>
-          <article class="product-card">
-            <img
-              src="./img/quankhaki.jpg"
-              alt="Quần Khaki Nam"
-              style="height: auto; width: auto"
-            />
-            <div class="info">
-              <div class="name">Quần Khaki Nam</div>
-              <div class="price">300.000₫</div>
-              <div class="desc">Quần khaki nam chất liệu cotton mềm mại.</div>
-            </div>
-            <div class="actions">
-              <button class="btn">Thêm vào giỏ hàng</button>
-            </div>
-          </article>
+            <button class="search-btn" aria-label="Tìm">🔍</button>
+          </form>
+        </div>
+
+        <div class="right-area">
+          <div class="icons">
+            <a class="icon" href="#" title="Địa điểm">📍</a>
+            <a class="icon" href="#" title="Tài khoản">👤</a>
+            <a class="icon" href="#" title="Yêu thích">♡</a>
+            <a class="icon" href="#" title="Giỏ hàng">🛒</a>
+          </div>
         </div>
       </div>
-    </section>
+      <div class="top-divider"></div>
+    </header>
+    <!-- End Header -->
+
+<h2>Khảo sát phong cách thời trang</h2>
+<button onclick="openPopup()">Bắt đầu trả lời</button>
+
+<!-- POPUP -->
+<div class="overlay" id="popupOverlay">
+    <div class="popup">
+        <h3>Khảo sát thời trang</h3>
+
+        <div class="question">
+            <strong>1. Bạn thường ưu tiên phong cách quần áo nào nhất?</strong><br>
+            <input type="radio" name="q1" value="Thể thao, năng động"> a. Thể thao, năng động<br>
+            <input type="radio" name="q1" value="Lịch sự, sang trọng"> b. Lịch sự, sang trọng<br>
+            <input type="radio" name="q1" value="Đơn giản, tối giản"> c. Đơn giản, tối giản<br>
+            <input type="radio" name="q1" value="Cá tính, nổi bật"> d. Cá tính, nổi bật
+        </div>
+
+        <div class="question">
+            <strong>2. Màu sắc bạn thích mặc nhất là gì?</strong><br>
+            <input type="radio" name="q2" value="Màu trung tính"> a. Màu trung tính<br>
+            <input type="radio" name="q2" value="Màu sáng rực rỡ"> b. Màu sáng rực rỡ<br>
+            <input type="radio" name="q2" value="Màu pastel"> c. Màu pastel nhẹ nhàng<br>
+            <input type="radio" name="q2" value="Màu tối trầm"> d. Màu tối, trầm
+        </div>
+
+        <div class="question">
+            <strong>3. Bạn thường lựa chọn quần áo dựa trên điều gì?</strong><br>
+            <input type="radio" name="q3" value="Sự thoải mái"> a. Sự thoải mái<br>
+            <input type="radio" name="q3" value="Thời trang xu hướng"> b. Thời trang, xu hướng<br>
+            <input type="radio" name="q3" value="Phù hợp công việc"> c. Phù hợp công việc/học tập<br>
+            <input type="radio" name="q3" value="Theo tâm trạng"> d. Theo tâm trạng
+        </div>
+
+        <div class="question">
+            <strong>4. Bạn thường chi bao nhiêu cho một bộ trang phục?</strong><br>
+            <input type="radio" name="q4" value="Dưới 300k"> a. Dưới 300.000đ<br>
+            <input type="radio" name="q4" value="300-700k"> b. 300.000đ – 700.000đ<br>
+            <input type="radio" name="q4" value="700k-1.5m"> c. 700.000đ – 1.500.000đ<br>
+            <input type="radio" name="q4" value="Trên 1.5m"> d. Trên 1.500.000đ
+        </div>
+
+        <div class="question">
+            <strong>5. Trang phục bạn hay mặc nhất khi ra ngoài?</strong><br>
+            <input type="radio" name="q5" value="Áo phông + jean"> a. Áo phông + quần jean<br>
+            <input type="radio" name="q5" value="Sơ mi + quần tây"> b. Sơ mi + quần tây<br>
+            <input type="radio" name="q5" value="Váy đầm"> c. Váy/đầm hoặc outfit phối kỹ<br>
+            <input type="radio" name="q5" value="Hoodie streetwear"> d. Hoodie, đồ streetwear
+        </div>
+
+        <div class="question">
+            <strong>6. Bạn thường chọn chất liệu quần áo nào?</strong><br>
+            <input type="radio" name="q6" value="Cotton"> a. Cotton thoáng mát<br>
+            <input type="radio" name="q6" value="Jean"> b. Jean/denim<br>
+            <input type="radio" name="q6" value="Nỉ thun"> c. Nỉ, thun<br>
+            <input type="radio" name="q6" value="Lụa"> d. Lụa/vải mềm mịn
+        </div>
+
+        <div class="question">
+            <strong>7. Bạn thường chọn giày kiểu gì nhất?</strong><br>
+            <input type="radio" name="q7" value="Sneaker"> a. Sneaker<br>
+            <input type="radio" name="q7" value="Giày da"> b. Giày da/giày tây<br>
+            <input type="radio" name="q7" value="Sandal"> c. Sandal/dép<br>
+            <input type="radio" name="q7" value="Trend"> d. Giày thời trang theo trend
+        </div>
+        <button onclick="submitAnswer()">Gửi kết quả</button>
+        <button onclick="closePopup()">Đóng</button>
+    </div>
+</div>
+
+<script>
+function openPopup() {
+    document.getElementById("popupOverlay").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popupOverlay").style.display = "none";
+}
+function submitAnswer() {
+    window.location.href = "https://caovanhotxoan.github.io/AoQuan/";
+}
+</script>
+
+</body>
+</html>
+
   </body>
 </html>
